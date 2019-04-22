@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Auth.LoginFragment"
+    android:background="#ffffff"
+
+    >
+
+
+    <TextView
+        android:id="@+id/labelLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/inputUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelLogin"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="User Name"
+        android:inputType="text"
+        android:padding="10dp" />
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputUserName"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimary"
+
+        android:text="LogIn"
+        android:textColor="#fff" />
+</RelativeLayout>

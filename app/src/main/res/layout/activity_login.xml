@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Auth.LoginActivity"
+    android:background="#8bc34a">
+
+    <LinearLayout
+        android:id="@+id/LoginPageFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints"
+        tools:layout="@layout/fragment_login"
+        android:layout_margin="20dp"
+        android:orientation="vertical" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPageFragment"
+        tools:ignore="MissingConstraints"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+
+        >
+
+        <TextView
+            android:id="@+id/setLogin"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:onClick="changeAuthType"
+            android:text="Login"
+            android:textAlignment="center" />
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/setSignup"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="SignUp"
+            android:onClick="changeAuthType" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

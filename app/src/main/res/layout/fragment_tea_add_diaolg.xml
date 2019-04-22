@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Teas.TeaAddDialogFragment"
+    android:orientation="vertical"
+    android:id="@+id/teaAddDialogLayout">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/inputTeaName"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+
+        android:hint="Tea name" />
+    <EditText
+        android:id="@+id/inputTeaType"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Tea type"/>
+
+    <TextView
+        android:id="@+id/viewChoseTeaRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorSecondary"/>
+    <SeekBar
+        android:id="@+id/choseTeaRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:min="0"
+
+        />
+</LinearLayout>
